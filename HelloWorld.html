@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> my first website </title> 
+<style type="text/css">
+	body{
+
+		background-image: url(pictures/1.jpg);
+		background-repeat: no-repeat;
+		background-size: 1600px 800px; 
+		animation-name: change;
+		animation-duration: 16s;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	h1{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		color: black;
+		font-size: 60pt;
+		text-align: center;
+		font-family: serif;
+		animation-name: hide;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-direction: alternate;
+	}
+	@keyframes change{
+		0%{
+			background-position: -30px -30px -30px; 
+		}
+		25%{
+			background-position: -30px -30px -30px;
+			background-size: 1700px 850px;
+		}
+		50%{
+			background-position: -30px -30px;
+			background-size: 1650px 850px;
+		}
+		75%{
+			background-position: -30px -30px -30px -30px;
+			background-size: 1700px 900px;
+		}
+		100%{
+			background-position: -30px -30px -30px -30px;
+			background-size: 1730px 930px;
+		}
+
+	}
+
+	@keyframes hide{
+		0%{
+			opacity: 1;
+		}
+		25%{
+			opacity: 0.75;
+		}
+		50%{
+			opacity: 0.5;
+		}
+		75%{
+			opacity: 0.25;
+		}
+		100%{
+			opacity: 0.01;
+		}
+
+	}
+</style> 
+<script>
+</script> 
+</head>
+<body>
+     
+	<h1>Hello world</h1> 
+     
+<body>
+</html> 
